@@ -36,7 +36,7 @@ bl_info = {
     "description": "Computer vision node-based programming",
     "warning": "",
     "wiki_url": "https://opencv-laboratory.readthedocs.io/en/latest/",
-    "tracker_url": "https://github.com/feler404/ocvl-addon/issues",
+    "tracker_url": "https://github.com/feler404/ocvl_addon/issues",
     "category": "Node"
 }
 
@@ -46,14 +46,14 @@ if __name__ != "ocvl":
 
 
 def register():
-    from ocvl-addon import logger_conf
-    from ocvl-addon.core import node_tree
-    from ocvl-addon.core import sockets
-    from ocvl-addon.operatores import operatores
-    from ocvl-addon.operatores import abc
+    from ocvl_addon import logger_conf
+    from ocvl_addon.core import node_tree
+    from ocvl_addon.core import sockets
+    from ocvl_addon.operatores import operatores
+    from ocvl_addon.operatores import abc
     from ocvl_addon.core.register_utils import reload_ocvl_modules
-    from ocvl-addon.operatores import select_area
-    from ocvl-addon.core import initial_handlers
+    from ocvl_addon.operatores import select_area
+    from ocvl_addon.core import initial_handlers
     reload_ocvl_modules()
     node_tree.register()
     sockets.register()
@@ -65,12 +65,12 @@ def register():
 
 
 def unregister():
-    from ocvl-addon.core import node_tree
-    from ocvl-addon.core import sockets
-    from ocvl-addon.operatores import operatores
-    from ocvl-addon.operatores import abc
-    from ocvl-addon.operatores import select_area
-    from ocvl-addon.core import initial_handlers
+    from ocvl_addon.core import node_tree
+    from ocvl_addon.core import sockets
+    from ocvl_addon.operatores import operatores
+    from ocvl_addon.operatores import abc
+    from ocvl_addon.operatores import select_area
+    from ocvl_addon.core import initial_handlers
     node_tree.unregister()
     sockets.unregister()
     operatores.unregister()
